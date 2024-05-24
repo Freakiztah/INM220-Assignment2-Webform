@@ -1,0 +1,302 @@
+/* adding local fonts */
+@font-face {
+
+    font-family: "PoetsenOne";
+    font-weight:  100;
+    font-style: italic;
+    src: url(../assets/fonts/PoetsenOne-Regular.ttf);
+}
+
+P {
+    font-family: "PoetsenOne"
+}
+/* header settings */
+header {
+    width: 100vw;
+    height: 90px;
+    background-color: skyblue;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+/* logo settings */
+#logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: darkblue;
+    margin-left: 30px;
+}
+
+/* navbar */
+nav {
+    width: 350px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+nav a:hover {
+    font-style: italic; 
+    font-weight: bold;
+}
+
+/* font settings */
+a {
+    font-family: "raleway", "sans-serif";
+    font-weight: 500;
+    text-decoration: none;
+    color: darkblue;
+}
+/* main focus section */
+main {
+    width: 100vw;
+    height: calc(100vh - 135px);
+    display: flex;   
+}
+
+
+
+/* body section */
+
+body, html {
+    height: 100%;
+    margin: 10;
+    padding: 0;
+    background-color: #c6edff;
+    background-image: url('/assets/images/bluehoneycombs.png');
+    background-size: 90%; 
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-position: left; 
+}
+
+/* left section */
+
+#left {
+
+    background-color: darkblue;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    max-width: 100%; 
+    margin: auto; 
+    height: 70%; 
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+    color: skyblue;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+legend {
+
+    color: skyblue;
+}
+
+#message {
+    height: 100px; 
+    width: 100%; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: skyblue;
+    color: darkblue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"]:hover {
+    background-color: #ce8924;
+}
+
+
+/* left section */
+
+
+/* right section */
+#right {
+    width: 45%;
+    height: 100%;
+    background-color: #f2f2f0;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    height: 100%; 
+}
+
+#avatar {
+    align-items: center;
+    max-width: 100%; 
+    max-height: 100%; 
+    border-radius: 15px; 
+}
+/* right section */
+
+/* footer section */
+footer {
+    width: 100vw;
+    height: 45px;
+    background-color: skyblue;
+    color:  darkblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* footer section */
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    
+    main {
+        flex-direction: column;
+        min-height: calc(100vh - 30px); 
+    }
+
+    #left {
+        background-color: darkblue;
+        border-radius: 15px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        max-width: 80%; 
+        margin: auto; 
+        height: 60%; 
+    }
+
+    fieldset {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    label {
+        margin-bottom: 5px;
+        font-size: 12px;
+        display: block;
+        color: skyblue;
+    }
+
+    legend {
+
+        font-size: 14px;
+        display: block;
+        color: skyblue;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+
+    #message {
+        height: 80px; 
+        width: 100%; 
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        background-color: skyblue;
+        color: darkblue;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    input[type="submit"]:hover {
+        background-color: #ce8924;
+    }
+
+    #right {
+        width: 100%; 
+        margin: auto; 
+        order: -1;
+    }
+
+    header {
+        text-align: center; 
+        height: 50px; 
+    }
+
+    #logo {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: darkblue;
+        margin-left: 10px;
+    }
+
+    nav {
+        width: 350px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    /* to Hide Footer */
+    footer {
+        display: none;
+    }
+}
+
+
+
+
+
+
+

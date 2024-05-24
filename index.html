@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Week 3 Lab 3 - HTML Forms</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/images/mikez150.png">
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="/assets/images/mikez150.png" alt="site logo">
+        <nav>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Gallery</a>
+            <a href="">Contact</a>
+        </nav>
+    </header>
+    <main>
+
+        <section id="left">
+            <form action="" method="post">
+                <fieldset>
+
+
+                    <label for="">First Name*</label>
+                    <input id="fname" type="text" required />
+                    <label for="">Last Name*</label>
+                    <input id="lname" type="text" required />
+                </fieldset>
+                <fieldset>
+            
+                    <label for="">Email*</label>
+                    <input type="email" required>
+                    <label for="">Contact Number*</label>
+                    <input id="cn" type="contact number" required>
+
+                </fieldset>
+   
+              
+                <br>
+                <legend>Message:</legend>
+                <br>
+                <textarea name="" id="message" rows="4"></textarea>
+
+                
+                <input type="submit" value="Send Message">
+
+
+
+            </form>
+
+        </section>
+
+        <section id="right">
+            <img id="avatar" src="/assets/images/gamike.png" alt="funkopop contact me image">
+        </section>
+
+    </main>
+
+
+    <footer>
+        © Designed & Developed by Michael Victor Arasga | 2024
+    </footer>
+</body>
+
+</html>
